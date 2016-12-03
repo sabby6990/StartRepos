@@ -1,5 +1,9 @@
 package Algos;
 
+/**
+ * @author saurabh
+ * code for prime numbers
+ */
 public class PrimeNos {
 	
 	// preventing extra loops
