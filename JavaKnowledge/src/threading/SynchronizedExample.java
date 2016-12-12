@@ -31,7 +31,7 @@ class CounterThread extends Thread {
 	}
 
 }
-
+// wow simple class
 class SimpleClass {
 	Counter counter = null;
 
