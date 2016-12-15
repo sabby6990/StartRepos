@@ -3,6 +3,7 @@ package threading;
 import java.util.concurrent.atomic.AtomicInteger;
 
 class ResourceClass {
+	
 	AtomicInteger atomicInt = new AtomicInteger(0);
 
 	public int next() {

@@ -2,6 +2,7 @@ package advance;
 
 import java.util.function.BiFunction;
 import java.util.function.Function;
+import java.util.function.Supplier;
 
 public class HigherOrderFunctions {
 	
@@ -19,6 +20,11 @@ public class HigherOrderFunctions {
 	}
 	
 	public static void main(String[] args) {
+		
+		
+		Function<Supplier<Integer>,Integer> function = (func)->func.get();
+		function.apply(()->1);
+		
 		HigherOrderFunctions.Convertor convertor = new Convertor();
 		convertor.apply(1);
 		System.out.println(convertor.apply(20D, 50D));
