@@ -13,7 +13,7 @@ public class BinarySearch {
 		int startIndex = 0;
 		int endIndex = intArray.length - 1;
 
-		while (startIndex < endIndex) {
+		while (startIndex <= endIndex) {
 			int mid = (startIndex + endIndex) / 2;
 			if (intArray[mid] == searchKey) {
 				return mid;
@@ -29,7 +29,7 @@ public class BinarySearch {
 
 	public static void main(String[] args) {
 		int sortedArray[] = { 2, 3, 4, 5, 6, 7 };
-		int searchKey = 6;
+		int searchKey = 7;
 		System.out.println(searchKey + " found at index = " + binarySearch(sortedArray, searchKey));
 	}
 
