@@ -1,6 +1,6 @@
 package model;
 
-public class Employee implements Comparable<Employee> {
+public class Employee implements Comparable<Employee>, Cloneable {
 	private String name;
 	private String lastName;
 	private Integer age;
@@ -12,6 +12,9 @@ public class Employee implements Comparable<Employee> {
 		this.age = age;
 	}
 
+	public void setName(String name){
+		this.name = name;
+	}
 	public String getName() {
 		return name;
 	}
@@ -30,4 +33,9 @@ public class Employee implements Comparable<Employee> {
 		return age - o.getAge();
 	}
 
+	// cloning example
+	@Override
+	public Object clone() throws CloneNotSupportedException {
+		return (Employee) super.clone();
+	}
 }

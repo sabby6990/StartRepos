@@ -17,7 +17,7 @@ public class BinarySearchRecursion {
 				return recursiveBinarySearch(array, midIndex + 1, endIndex, key);
 			} else {
 				return midIndex;
-			}
+			}	
 
 		}
 		return -1;
