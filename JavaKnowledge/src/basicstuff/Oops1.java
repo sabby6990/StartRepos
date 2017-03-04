@@ -36,8 +36,18 @@ public class Oops1 extends Parent1 {
 	protected void helloWorld(String name) {
 
 	}
+	
+	private void method(Object o){
+		System.out.println("object method");
+	}
+	
+	private void method(String s){
+		System.out.println("String ss "+s);
+	}
+	
 
 	public static void main(String[] args) {
+		
 		Oops1 oops = new Oops1();
 		Parent1 parent = new Oops1(oops);
 		Parent1 parent1 = new Parent1();
@@ -48,6 +58,8 @@ public class Oops1 extends Parent1 {
 		oops.helloWord();
 		parent.helloWord(); // pollymorphism
 		parent1.helloWord();
+		
+		oops.method(null);
 	}
 }
 
@@ -71,6 +83,9 @@ class Parent1 {
  * 
  * 
  * */
+
+
+
 
 abstract class AbstarctDemo{
 	

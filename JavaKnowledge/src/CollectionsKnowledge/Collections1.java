@@ -7,6 +7,8 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
+import java.util.PriorityQueue;
+import java.util.Queue;
 import java.util.Set;
 import java.util.TreeMap;
 
@@ -79,6 +81,7 @@ public class Collections1 {
 			System.out.println(e);
 		});
 	}
+	
 
 	public static void main(String[] args) {
 		Collections1.arrayListDemo();
@@ -88,5 +91,6 @@ public class Collections1 {
 		Collections1.hashMapDemo();
 		
 		Collections1.setDemo();
+		
 	}
 }

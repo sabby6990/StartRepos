@@ -27,10 +27,19 @@ public class Employee implements Comparable<Employee>, Cloneable {
 		return age;
 	}
 
+	@Override
+	public int hashCode() {
+		return name.hashCode() >>> 16;
+	}
+	
 	// this is from comparable interface
 	@Override
 	public int compareTo(Employee o) {
-		return age - o.getAge();
+		
+		return this.age.compareTo(o.getAge());
+		// descending order
+		// return o.getAge().compareTo(this.age);
+		//return age - o.getAge();
 	}
 
 	// cloning example
